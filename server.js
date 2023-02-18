@@ -4,6 +4,7 @@ const connectDB = require('./config/db');
 const cookieParser = require('cookie-parser')
 dotenv.config({path:'./config/config.env'});
 connectDB();
+console.log("test");
 const app=express();
 app.use(express.json());
 app.use(cookieParser())
